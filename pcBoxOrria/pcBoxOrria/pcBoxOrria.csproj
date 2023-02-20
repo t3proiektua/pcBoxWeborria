@@ -6,6 +6,10 @@
 		<UserSecretsId>aspnet-pcBoxOrria-0b01cd17-f5e5-44a8-900c-06be5bb6f7db</UserSecretsId>
 	</PropertyGroup>
 	<ItemGroup>
+		<PackageReference Include="docfx.console" Version="2.59.4">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
 		<PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.10" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.10" />
 		<PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.10" />

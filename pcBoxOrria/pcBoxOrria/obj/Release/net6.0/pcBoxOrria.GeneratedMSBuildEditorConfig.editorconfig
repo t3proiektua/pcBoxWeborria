@@ -20,8 +20,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ikerj/Desktop/Proyecto/pcBoxWeborria/pcBoxOrria/pcBoxOrria/Views/Forum/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1cSW5kZXguY3NodG1s
+[C:/Users/ikerj/Desktop/Proyecto/pcBoxWeborria/pcBoxOrria/pcBoxOrria/Views/Ebaluazioa/JokoEbaluazioa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRWJhbHVhemlvYVxKb2tvRWJhbHVhemlvYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ikerj/Desktop/Proyecto/pcBoxWeborria/pcBoxOrria/pcBoxOrria/Views/Forum/Komentarioa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ydW1cS29tZW50YXJpb2EuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ikerj/Desktop/Proyecto/pcBoxWeborria/pcBoxOrria/pcBoxOrria/Views/Home/Index.cshtml]
@@ -32,8 +36,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ikerj/Desktop/Proyecto/pcBoxWeborria/pcBoxOrria/pcBoxOrria/Views/Ranking/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFua2luZ1xJbmRleC5jc2h0bWw=
+[C:/Users/ikerj/Desktop/Proyecto/pcBoxWeborria/pcBoxOrria/pcBoxOrria/Views/Ranking/Johnny.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFua2luZ1xKb2hubnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ikerj/Desktop/Proyecto/pcBoxWeborria/pcBoxOrria/pcBoxOrria/Views/Ranking/MahiKingdom.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFua2luZ1xNYWhpS2luZ2RvbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ikerj/Desktop/Proyecto/pcBoxWeborria/pcBoxOrria/pcBoxOrria/Views/Ranking/Pouni.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFua2luZ1xQb3VuaS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ikerj/Desktop/Proyecto/pcBoxWeborria/pcBoxOrria/pcBoxOrria/Views/Ranking/ZombieKiller.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmFua2luZ1xab21iaWVLaWxsZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ikerj/Desktop/Proyecto/pcBoxWeborria/pcBoxOrria/pcBoxOrria/Views/Shared/Error.cshtml]

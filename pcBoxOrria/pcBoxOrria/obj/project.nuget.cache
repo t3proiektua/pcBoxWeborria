@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "1GtdomshhLzv67a+Q3QVeGBvUmlwPUK2BTO1bA1AY2L+G6n/atWQCE7M/gRq1bcsNRLVa8ZE7llYfyy9LeQ6JA==",
+  "dgSpecHash": "md05hWWJ2RkDutsF4GIiWDRh+wjakdZxJbxB8/lSM8rb30nq0pYBluwqIWj3xjx0XfUsaDLetVEByg8bysqBLw==",
   "success": true,
   "projectFilePath": "C:\\Users\\ikerj\\Desktop\\Proyecto\\pcBoxWeborria\\pcBoxOrria\\pcBoxOrria\\pcBoxOrria.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ikerj\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\ikerj\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
     "C:\\Users\\ikerj\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
+    "C:\\Users\\ikerj\\.nuget\\packages\\docfx.console\\2.59.4\\docfx.console.2.59.4.nupkg.sha512",
     "C:\\Users\\ikerj\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ikerj\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.10\\microsoft.aspnetcore.cryptography.internal.6.0.10.nupkg.sha512",
     "C:\\Users\\ikerj\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.10\\microsoft.aspnetcore.cryptography.keyderivation.6.0.10.nupkg.sha512",

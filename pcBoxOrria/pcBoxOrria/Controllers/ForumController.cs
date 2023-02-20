@@ -22,7 +22,12 @@ namespace pcBoxOrria.Controllers
             komentarioGuztiak.Sort((x, y) => y.id.CompareTo(x.id));
             return View(komentarioaVM);
         }
-        // GET: ForumController/Create
+        /// <summary>
+        /// Komentarioak rest api erabiliz igoteko erabiltzen den komentarioa
+        /// </summary>
+        /// <param name="user">Loginean dagoen erabiltzailea hartzen du</param>
+        /// <param name="komentarioa">Idatzitako komentarioa</param>
+        /// <returns></returns>
         public IActionResult PostKomentarioa(string user, string komentarioa)
         {
             Komentarioa komentarioaObject = new Komentarioa();

@@ -177,3 +177,6 @@ C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\pcBoxOrria\obj\Debug\ne
 C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\pcBoxOrria\obj\Debug\net6.0\pcBoxOrria.genruntimeconfig.cache
 C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\pcBoxOrria\obj\Debug\net6.0\ref\pcBoxOrria.dll
 C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\pcBoxOrria\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\pcBoxOrria\bin\Debug\net6.0\docfx.json
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\pcBoxOrria\bin\Debug\net6.0\_site\manifest.json
+C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\pcBoxOrria\bin\Debug\net6.0\_site\search-stopwords.json
