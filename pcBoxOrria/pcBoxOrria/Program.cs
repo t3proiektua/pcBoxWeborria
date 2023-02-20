@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using pcBoxOrria.Data;
+using pcBoxOrria.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,9 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
+//Zerbitzuak bertan gehitu
+builder.Services.AddScoped<IPartidaService, PartidaService>();
+builder.Services.AddScoped<IKomentarioaService, KomentarioaService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

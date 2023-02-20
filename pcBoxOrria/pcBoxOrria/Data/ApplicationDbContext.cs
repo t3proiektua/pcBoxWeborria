@@ -9,5 +9,6 @@ namespace pcBoxOrria.Data
             : base(options)
         {
         }
+        public DbSet<pcBoxOrria.Models.Partida> Partidas { get; set; } = default!;
     }
 }

@@ -1,25 +1,33 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using pcBoxOrria.Models;
+using pcBoxOrria.Services;
+using pcBoxOrria.ViewModels;
 
 namespace pcBoxOrria.Controllers
 {
     public class ForumController : Controller
     {
-        // GET: ForumController
-        public ActionResult Index()
+        private readonly IKomentarioaService _komentarioaService;
+        public ForumController(IKomentarioaService komentarioaService)
         {
-            return View();
+            _komentarioaService = komentarioaService;
         }
-
-        // GET: ForumController/Details/5
-        public ActionResult Details(int id)
+        public async Task<ActionResult> Komentarioa()
         {
-            return View();
+            var komentarioaVM = new KomentarioaViewModel();
+            List<Komentarioa> komentarioGuztiak = new List<Komentarioa>();
+            komentarioGuztiak = await _komentarioaService.GetKomentarioak();
+            komentarioaVM.KomentarioaViewModelList = komentarioGuztiak;
+            komentarioGuztiak.Sort((x, y) => y.id.CompareTo(x.id));
+            return View(komentarioaVM);
         }
-
         // GET: ForumController/Create
-        public ActionResult Create()
+        public IActionResult PostKomentarioa(string user, string komentarioa)
         {
+            Komentarioa komentarioaObject = new Komentarioa();
+            komentarioaObject.user = user;
+            komentarioaObject.comentario = komentarioa;
             return View();
         }
 
@@ -37,28 +45,6 @@ namespace pcBoxOrria.Controllers
                 return View();
             }
         }
-
-        // GET: ForumController/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: ForumController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
         // GET: ForumController/Delete/5
         public ActionResult Delete(int id)
         {

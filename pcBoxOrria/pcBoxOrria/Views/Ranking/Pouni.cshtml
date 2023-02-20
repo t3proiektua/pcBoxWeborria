@@ -1,0 +1,73 @@
+﻿@using System.Diagnostics
+@model pcBoxOrria.ViewModels.PartidaViewModel
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    //Wall of fame
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Izena</th>
+                <th scope="col">Taldea</th>
+                <th scope="col">Jokoa</th>
+                <th scope="col">Puntuazioa</th>
+            </tr>
+        </thead>
+        <tbody>
+            @try
+            {
+                var posizioa = 1;
+                foreach (var partida in Model.PartidaViewModelList)
+                {
+                    <tr>
+                        <th scope="row">@posizioa</th>
+                        <td>@partida.erabiltzailea</td>
+                        <td>@partida.id</td>
+                        <td>Pouni</td>
+                        <td>@partida.puntuazioa</td>
+                    </tr>
+                    posizioa = posizioa + 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                <p>@ex.Message</p>
+            }
+        </tbody>
+    </table>
+    //Wall of shame
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Izena</th>
+                <th scope="col">Taldea</th>
+                <th scope="col">Jokoa</th>
+                <th scope="col">Puntuazioa</th>
+            </tr>
+        </thead>
+        <tbody>
+            @try
+            {
+                var posizioa = 1;
+                foreach (var partida in Model.PartidaViewModelList.Reverse())
+                {
+                    <tr>
+                        <th scope="row">@posizioa</th>
+                        <td>@partida.erabiltzailea</td>
+                        <td>@partida.id</td>
+                        <td>Pouni</td>
+                        <td>@partida.puntuazioa</td>
+                    </tr>
+                    posizioa = posizioa + 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                <p>@ex.Message</p>
+            }
+        </tbody>
+    </table>
+}
