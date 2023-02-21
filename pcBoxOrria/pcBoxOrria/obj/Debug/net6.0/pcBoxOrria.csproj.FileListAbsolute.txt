@@ -180,3 +180,7 @@ C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\pcBoxOrria\bin\Debug\ne
 C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\pcBoxOrria\bin\Debug\net6.0\docfx.json
 C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\pcBoxOrria\bin\Debug\net6.0\_site\manifest.json
 C:\Users\ikerj\Desktop\Proyecto\pcBoxWeborria\pcBoxOrria\pcBoxOrria\bin\Debug\net6.0\_site\search-stopwords.json
+C:\Users\jauregi.iker\Desktop\Proiektua\pcBoxWeborria\pcBoxOrria\pcBoxOrria\bin\Debug\net6.0\docfx.json
+C:\Users\jauregi.iker\Desktop\Proiektua\pcBoxWeborria\pcBoxOrria\pcBoxOrria\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\jauregi.iker\Desktop\Proiektua\pcBoxWeborria\pcBoxOrria\pcBoxOrria\bin\Debug\net6.0\_site\manifest.json
+C:\Users\jauregi.iker\Desktop\Proiektua\pcBoxWeborria\pcBoxOrria\pcBoxOrria\bin\Debug\net6.0\_site\search-stopwords.json
