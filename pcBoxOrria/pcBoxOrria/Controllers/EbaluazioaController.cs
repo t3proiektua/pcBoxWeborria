@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace pcBoxOrria.Controllers
 {
+    /// <summary>
+    /// Ebaluazion nota ikusteko eta notak aldatzeko erabiltzen den kontrolatzailea da.
+    /// </summary>
     public class EbaluazioaController : Controller
     {
         // GET: EbaluazioaController

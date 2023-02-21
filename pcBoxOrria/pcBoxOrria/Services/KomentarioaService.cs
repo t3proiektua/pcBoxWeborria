@@ -5,10 +5,16 @@ using System.Text;
 
 namespace pcBoxOrria.Services
 {
+    /// <summary>
+    /// Kodea "Komentarioa" objektuen zerrenda bat bueltatzen duen "GetKomentarioak" eta "Komentarioa" objektua bidaltzen duen "PostKomentarioa" metodoak ditu. "HttpClient" klasea erabiliz, "/comentarioak/comentarioGuztiak" eta "/comentarioak/comentarioBerria" URL-ak erabiltzen ditu datuak irakurri eta bidaltzeko
+    /// </summary>
     public class KomentarioaService : IKomentarioaService
     {
         private Uri url = new Uri("http://localhost:8080");
-        
+        /// <summary>
+        /// "GetKomentarioak" metodoak "Komentarioa" objektuen lista bat bueltatzen du. Metodoak "/comentarioak/comentarioGuztiak" izeneko URL-tik "HttpClient" klasea erabiliz jasotako datuak irakurri eta deserializatzen ditu, eta hala ere, beste metodo batzuetan erabil daitezkeen "Komentarioa" objektuen lista bat bueltatzen du.
+        /// </summary>
+        /// <returns></returns>
         public async Task<List<Komentarioa>> GetKomentarioak()
         {
             List<Komentarioa> komentarioaList = new List<Komentarioa>();
@@ -23,6 +29,11 @@ namespace pcBoxOrria.Services
             }
             return komentarioaList;
         }
+        /// <summary>
+        /// "PostKomentarioa" metodoak "void" itzultzen du eta "Komentarioa" objektua hartzen du parametro bezala. Metodoak "HttpClient" klasea erabiliz POST eskaera bat bidaltzen du "/comentarioak/comentarioBerria" izeneko URL-era, erantzuna jasotzen du eta estatua egiaztatzen du.
+        /// </summary>
+        /// <param name="komentarioa"></param>
+        /// <returns></returns>
         public async Task PostKomentarioa(Komentarioa komentarioa)
         {
             using(var httpClient = new HttpClient())

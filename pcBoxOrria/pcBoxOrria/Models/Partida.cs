@@ -2,6 +2,9 @@
 
 namespace pcBoxOrria.Models
 {
+    /// <summary>
+    /// klase onek partida sortzeko eta irakurtzeko erabiliko dugun modeloa da.  
+    /// </summary>
     public class Partida
     {
         [Key]

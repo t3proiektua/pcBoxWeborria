@@ -6,6 +6,9 @@ using pcBoxOrria.ViewModels;
 
 namespace pcBoxOrria.Controllers
 {
+    /// <summary>
+    /// Foroaren komentarioak ikusteko eta komentarioak igoteko erabiltzen den kontrolatzailea da.
+    /// </summary>
     public class ForumController : Controller
     {
         private readonly IKomentarioaService _komentarioaService;
@@ -13,6 +16,10 @@ namespace pcBoxOrria.Controllers
         {
             _komentarioaService = komentarioaService;
         }
+        /// <summary>
+        /// Metododo onek guk egindako mongo resta apian dauden komentario guztiak irakurri eta bistaratzen ditu.
+        /// </summary>
+        /// <returns></returns>
         public async Task<ActionResult> Komentarioa()
         {
             var komentarioaVM = new KomentarioaViewModel();
@@ -23,7 +30,7 @@ namespace pcBoxOrria.Controllers
             return View(komentarioaVM);
         }
         /// <summary>
-        /// Komentarioak rest api erabiliz igoteko erabiltzen den komentarioa
+        /// Metodo onek guk egindako mongo rest apiaren bitartez komentarioak igoteak ahalbidetzen du.
         /// </summary>
         /// <param name="user">Loginean dagoen erabiltzailea hartzen du</param>
         /// <param name="komentarioa">Idatzitako komentarioa</param>
