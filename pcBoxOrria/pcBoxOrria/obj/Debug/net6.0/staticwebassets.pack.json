@@ -5,6 +5,22 @@
       "PackagePath": "staticwebassets\\pcBoxOrria.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\ikerj\\Desktop\\Proyecto\\pcBoxWeborria\\pcBoxOrria\\pcBoxOrria\\wwwroot\\argazkia\\t1.png",
+      "PackagePath": "staticwebassets\\argazkia\\t1.png"
+    },
+    {
+      "Id": "C:\\Users\\ikerj\\Desktop\\Proyecto\\pcBoxWeborria\\pcBoxOrria\\pcBoxOrria\\wwwroot\\argazkia\\t2.png",
+      "PackagePath": "staticwebassets\\argazkia\\t2.png"
+    },
+    {
+      "Id": "C:\\Users\\ikerj\\Desktop\\Proyecto\\pcBoxWeborria\\pcBoxOrria\\pcBoxOrria\\wwwroot\\argazkia\\t3.png",
+      "PackagePath": "staticwebassets\\argazkia\\t3.png"
+    },
+    {
+      "Id": "C:\\Users\\ikerj\\Desktop\\Proyecto\\pcBoxWeborria\\pcBoxOrria\\pcBoxOrria\\wwwroot\\argazkia\\t4.png",
+      "PackagePath": "staticwebassets\\argazkia\\t4.png"
+    },
+    {
       "Id": "C:\\Users\\ikerj\\Desktop\\Proyecto\\pcBoxWeborria\\pcBoxOrria\\pcBoxOrria\\wwwroot\\argazkia\\userFoto.jpg",
       "PackagePath": "staticwebassets\\argazkia\\userFoto.jpg"
     },

@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using pcBoxOrria.Models;
+using pcBoxOrria.Services;
+using pcBoxOrria.ViewModels;
 
 namespace pcBoxOrria.Controllers
 {
@@ -8,12 +11,20 @@ namespace pcBoxOrria.Controllers
     /// </summary>
     public class EbaluazioaController : Controller
     {
-        // GET: EbaluazioaController
-        public ActionResult Index()
-        {
-            return View();
-        }
+        private readonly IEbaluazioaService _ebaluazioaService;
 
+        public EbaluazioaController(IEbaluazioaService ebaluazioaService)
+        {
+            _ebaluazioaService = ebaluazioaService;
+        }
+        public async Task<ActionResult> JokoEbaluazioa()
+        {
+            var komentarioaVM = new EbaluazioaViewModel();
+            List<Balorazioa> komentarioGuztiak = new List<Balorazioa>();
+            komentarioGuztiak = await _ebaluazioaService.GetAllEbaluazioak();
+            komentarioaVM.EbaluazioaViewModelList = komentarioGuztiak;
+            return View(komentarioaVM);
+        }
         // GET: EbaluazioaController/Details/5
         public ActionResult Details(int id)
         {

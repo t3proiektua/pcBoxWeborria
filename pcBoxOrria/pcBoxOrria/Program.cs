@@ -18,6 +18,7 @@ builder.Services.AddControllersWithViews();
 //Zerbitzuak bertan gehitu
 builder.Services.AddScoped<IPartidaService, PartidaService>();
 builder.Services.AddScoped<IKomentarioaService, KomentarioaService>();
+builder.Services.AddScoped<IEbaluazioaService, EbaluazioaService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
