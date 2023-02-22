@@ -7,7 +7,7 @@ namespace pcBoxOrria.Services
     /// </summary>
     public class EbaluazioaService : IEbaluazioaService
     {
-        private Uri url = new Uri("http://localhost:8080/");
+        private Uri url = new Uri("http://localhost:8081/");
 
         public async Task<List<Balorazioa>> GetAllEbaluazioak()
         {

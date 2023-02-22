@@ -10,7 +10,7 @@ namespace pcBoxOrria.Services
     public class PartidaService : IPartidaService
     {
         //La url al json del api
-        private Uri url = new Uri("http://localhost:8080/");
+        private Uri url = new Uri("http://localhost:8081/");
 
         /// <summary>
         /// GetPartidaMahiKingdom(): Mahi Kingdom kolekzioan dauden datu guztiak irakurtzen ditu, REST API bat erabiliz. JSON formatuan dauden datuak Partida klaseko objetu listan gordeko ditu eta itzuliko ditu.

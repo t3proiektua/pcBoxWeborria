@@ -10,7 +10,7 @@ namespace pcBoxOrria.Services
     /// </summary>
     public class KomentarioaService : IKomentarioaService
     {
-        private Uri url = new Uri("http://localhost:8080");
+        private Uri url = new Uri("http://localhost:8081");
         /// <summary>
         /// "GetKomentarioak" metodoak "Komentarioa" objektuen lista bat bueltatzen du. Metodoak "/comentarioak/comentarioGuztiak" izeneko URL-tik "HttpClient" klasea erabiliz jasotako datuak irakurri eta deserializatzen ditu, eta hala ere, beste metodo batzuetan erabil daitezkeen "Komentarioa" objektuen lista bat bueltatzen du.
         /// </summary>
@@ -39,7 +39,7 @@ namespace pcBoxOrria.Services
             using(var httpClient = new HttpClient())
             {
                 StringContent content = new StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(komentarioa), Encoding.UTF8, "application/json");
-                Uri urlKomentarioaGehitu = new Uri(url, "/comentarioak/comentarioBerria");
+                Uri urlKomentarioaGehitu = new Uri(url, "/comentarioak/comentarioBerria?user="+ komentarioa.user + "&filtro=" + "X" + "&comentario=" + komentarioa.comentario);
                 var response = await httpClient.PostAsync(urlKomentarioaGehitu, content);
                 string responseContent = await response.Content.ReadAsStringAsync();
                 response.EnsureSuccessStatusCode();
